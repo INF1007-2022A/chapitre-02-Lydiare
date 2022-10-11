@@ -2,7 +2,12 @@
 # -*- coding: utf-8 -*-
 def majuscule(mot):
     # TODO completer la fonction ici
-    return mot
+
+    maj = ''
+    for lettre in mot:
+        maj += chr(ord(lettre) - 32)
+
+    return maj
 
 
 if __name__ == '__main__':
